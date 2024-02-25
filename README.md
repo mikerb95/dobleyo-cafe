@@ -1,9 +1,3 @@
-# Stone: Astro Theme
-
-Stone is a free and open-source Astro theme specially designed for Business, Marketing, SaaS and Startup websites.
-
-## Key Features:
-
 - **Built with Tailwind CSS & Alpine.js**
 - **5+ Pages**
 - **15+ Sections**
@@ -17,14 +11,6 @@ Stone is a free and open-source Astro theme specially designed for Business, Mar
 - **Google Fonts**
 - **Remix Icons**
 - Free Updates
-
-## Getting Started
-
-### Requirements
-
-- Basic knowledge of Astro, HTML and CSS.
-- Text editor (We recommend Visual Studio Code)
-- Node.js 18 or higher.
 
 ### Install dependencies
 
@@ -83,13 +69,6 @@ Inside the project, you'll see the following folders and files:
 - `tailwind.config.cjs` - Tailwind configuration file. The theme section is where you define your color palette and fonts.
 - `tsconfig.json` - TypeScript configuration file.
 
-## Deployment
-
-Ready to build and deploy your site? Follow the [official documentation](https://docs.astro.build/en/guides/deploy/).
-
-## Support
-
-If you have any questions or suggestions do not hesitate to contact me.
 
 ## License
 
