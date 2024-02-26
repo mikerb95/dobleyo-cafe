@@ -1,36 +1,55 @@
 ---
 const pricing = [
   {
-    name: 'Basic',
-    description: 'For development, staging, and small production projects.',
+    name: 'Café 1',
+    description: 'Notas de sabor: Aroma frutado, cuerpo cremoso sabor a canela y cacao, acidez media.',
     periodicity: '/month',
     price: '$10',
+    // Intento de agregar imagen al menu de precios
+    image: '/dobleyo-cafe/public/assets/products/product1.webp  ', // Ruta de la imagen
+    //Cierre del bloque de imagen
     action: 'Buy Now',
-    features: ['5 Seats', '1,000 Projects', 'Lifetime access', 'Community Support'],
+    features: ['Molienda: Media','Tostion: Media', 'Varieda: Caturra', 'Region: Cundinamarca', 'Secado: Al sol'],
   },
   {
-    name: 'Pro',
-    description: 'For high-scale and mission critical projects.',
-    isFlagged: true,
+    name: 'Café 2',
+    description: 'Notas de sabor: Aroma frutado, cuerpo cremoso sabor a canela y cacao, acidez media.',
     periodicity: '/month',
     price: '$25',
     action: 'Buy Now',
-    features: ['10 Seats', '10,000 Projects', 'Lifetime access', 'Email Support', 'Free updates'],
+    features: ['Molienda: Media','Tostion: Media', 'Varieda: Caturra', 'Region: Cundinamarca', 'Secado: Al sol'],
   },
   {
-    name: 'Team',
-    description: 'For teams with more security, support, and performance needs.',
-    periodicity: '',
-    price: 'Custom',
+    name: 'Café 3',
+    description: 'Notas de sabor: Aroma frutado, cuerpo cremoso sabor a canela y cacao, acidez media.',
+    periodicity: '/month',
+    price: '$25',
     action: 'Buy Now',
-    features: [
-      'Unlimited Seats',
-      'Unlimited Projects',
-      'Lifetime access',
-      'Email and Chat Support',
-      'High-Performance',
-      'Free updates',
-    ],
+    features: ['Molienda: Media','Tostion: Media', 'Varieda: Caturra', 'Region: Cundinamarca', 'Secado: Al sol'],
+  },
+  {
+    name: 'Café 4',
+    description: 'Notas de sabor: Aroma frutado, cuerpo cremoso sabor a canela y cacao, acidez media.',
+    periodicity: '/month',
+    price: '$25',
+    action: 'Buy Now',
+    features: ['Molienda: Media','Tostion: Media', 'Varieda: Caturra', 'Region: Cundinamarca', 'Secado: Al sol'],
+  },
+  {
+    name: 'Café 5',
+    description: 'Notas de sabor: Aroma frutado, cuerpo cremoso sabor a canela y cacao, acidez media.',
+    periodicity: '/month',
+    price: '$25',
+    action: 'Buy Now',
+    features: ['Molienda: Media','Tostion: Media', 'Varieda: Caturra', 'Region: Cundinamarca', 'Secado: Al sol'],
+  },
+  {
+    name: 'Café 6',
+    description: 'Notas de sabor: Aroma frutado, cuerpo cremoso sabor a canela y cacao, acidez media.',
+    periodicity: '/month',
+    price: '$25',
+    action: 'Buy Now',
+    features: ['Molienda: Media','Tostion: Media', 'Varieda: Caturra', 'Region: Cundinamarca', 'Secado: Al sol'],
   },
 ];
 ---
@@ -43,7 +62,6 @@ const pricing = [
           <div
             class:list={[
               'relative flex flex-col gap-8 rounded-3xl p-8',
-              item.isFlagged && 'bg-primary-500/10 dark:bg-primary-400/10',
             ]}
           >
             <div class="flex-1">
@@ -55,6 +73,8 @@ const pricing = [
                 </span>
               </p>
               <p class="text-primary-950/70 dark:text-primary-200/70 mt-6">{item.description}</p>
+
+              
 
               <ul role="list" class="mt-6 space-y-6">
                 {item.features.map((feature) => (
@@ -74,7 +94,7 @@ const pricing = [
               </ul>
             </div>
             <a
-              href="#"
+              href="https://wa.me/+573204981580"
               class="bg-primary-600 dark:bg-primary-400 hover:bg-primary-700 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 dark:text-primary-950 inline-flex w-full items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
             >
               Buy now
